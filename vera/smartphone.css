@@ -1,0 +1,511 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: sans-serif, "poppins";
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    max-height:560vh;
+    width: 100%;
+    background-color: indigo;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    min-height:520vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:background-color 5s ;
+}
+.container-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+}
+.logo{
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    border-radius: 7rem 8px 7rem 0rem;
+    border: 1px crimson solid;
+    padding: 30px;
+}
+
+nav ul{
+    flex-direction: column;
+    top: 25%;
+    background-color: crimson;
+    border-radius: 15rem 0 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: 5%;
+
+}
+nav ul li{
+padding: 25px;
+list-style: none;
+}
+nav ul li a{
+text-decoration: none;
+font-weight: 700;
+color: white;
+}
+.active{
+border-bottom: 5px #111 solid;
+border-right: 5px #111 solid;
+padding: 30px;
+background: crimson;
+border-radius: 7rem 8px 7rem 0rem;
+}
+.active:hover{
+color: #111;
+}
+nav .logo h2, a:hover{
+
+color: crimson;
+}
+.left-caption{
+position: absolute;
+left: 2%;
+width: 80%;
+height: 50%;
+font-weight: 700;
+top: 50%;
+font-size: small;
+}
+.left-caption h1{
+margin-bottom: 20px;
+position: absolute;
+top: -50%;
+width: 60%;
+font-weight: 900;
+}
+.left-caption p{
+    margin-bottom: 20px;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    left: 20px;
+    border-bottom: 1px crimson solid;
+    }
+.left-caption span{
+color: crimson;
+}
+.right-anime{opacity: 0;
+
+}
+.location{
+position: absolute;
+bottom: 50%;
+padding: 5px;
+display: flex;
+left: 0;
+}
+select{
+outline: none;
+background-color: transparent;
+border:1px crimson solid ;
+margin: 2px;
+padding: 2px;
+border-radius: 20px;
+color: white;
+}
+select option{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: white;
+}
+select:hover{
+background-color: crimson;
+
+}
+#about{
+position: absolute;
+top: 86%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 600px;
+border-radius: 2rem;
+/* background-color: rgb(255, 238, 0); */
+background-color: rgba(0,0,0,0.7);
+
+}
+#about .top-description img{
+position: absolute;
+top: -8%;
+border-radius: 50%;
+border: 10px crimson solid;
+left: 40%;
+right: 40%;
+}
+.top-description h1{
+position: absolute;
+top: 15%;
+left: 30%;
+
+}
+.about-inner-card .my-self {
+width: 60%;
+position: absolute;
+left: 24%;
+top: 26%;
+}
+#skills{
+position: absolute;
+top: 150%;
+height: 600px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#skills h1{
+position: absolute;
+top: 10%;
+}
+#skills .side-by-side {
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+position: absolute;
+top:30% ;
+
+}
+#skills .side-by-side1 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:40% ;
+
+}
+#skills .side-by-side p{
+    position: absolute;
+    left: 2%;
+}
+
+#skills .side-by-side1 p{
+    position: absolute;
+    left: 2%;
+}
+
+#skills .side-by-side2 p{
+    position: absolute;
+    left: 2%;
+}
+#skills .side-by-side3 p{
+    position: absolute;
+    left: 2%;
+}
+#skills .side-by-side4 p{
+    position: absolute;
+    left: 2%;
+}
+#skills .side-by-side5 p{
+    position: absolute;
+    left: 2%;
+}
+#skills .side-by-side6 p{
+    position: absolute;
+    left: 2%;
+}
+#skills img{
+    opacity: 0;
+}
+#skills .side-by-side2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:50% ;
+
+}
+#skills .side-by-side3 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:60% ;
+
+}
+#skills .side-by-side4 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:70% ;
+
+}
+#skills .side-by-side5 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:80% ;
+
+}
+#skills .side-by-side6 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+position: absolute;
+top:90% ;
+
+}
+#skills  img{
+border-radius: 50%;
+padding: 20px;
+height: 100px;
+width: 100px;
+position: absolute;
+left: 60px;
+}
+#skills  p{
+position: absolute;
+left: 25%;
+
+}
+#skills  .progress-bar{
+height: 9px;
+width: 40%;
+border-radius: 2rem;
+border: 1px crimson solid;
+position: absolute;
+left: 45%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#skills  .progress-bar .percentage{
+height:3px ;
+width: 90%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  .progress-bar .percentage3{
+height:3px ;
+width: 85%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  .progress-bar .percentage4{
+height:3px ;
+width: 55%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  .progress-bar .percentage5{
+height:3px ;
+width: 50%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  .progress-bar .percentage6{
+height:3px ;
+width: 45%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  .progress-bar .percentage7{
+height:3px ;
+width: 30%;
+background-color: crimson;
+position: absolute;
+left: 0.5%;
+border-radius: 2rem;
+
+}
+#skills  h3{
+position: absolute;
+right: 10px;
+}
+
+#education{
+width: 90%;
+height: 700px;
+position: absolute;
+top: 210%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#education h1{
+position: absolute;
+top: 40px;
+}
+#education .boxes{
+width: 80%;
+height: 70%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+#education .boxes .box{
+height: 300px;
+width: 300px;
+background: rgba(0,0,0,0.7);
+margin-top: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-blend-mode: soft-light; */
+}
+#education .boxes .box h3{
+color: crimson;
+position: absolute;
+cursor: pointer;
+}
+#education .boxes .box:hover{
+background: rgba(0,0,0,0.7);
+}
+#contact{
+height: 600px;
+width: 90%;
+
+position: absolute;
+top: 438%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#contact h2{
+position: absolute;
+top: 10%;
+border:1px solid crimson;
+padding: 20px;
+font-weight: 700;
+border-radius: 7rem 8px 7rem 0rem;
+}
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 60%;
+width: 60%;
+position: absolute;
+top: 35%;
+}
+input,textarea, button{
+outline: none;
+padding: 20px;
+margin: 10px;
+border: none;
+background: transparent;
+border:1px crimson solid ;
+width: 100%;
+color: white;
+}
+form button{
+font-size: 14px;
+font-weight: 800;
+}
+form button:hover{
+background: crimson;
+}
+.footer{
+height: 300px;
+width: 100%;
+position: absolute;
+top: 505%;
+background: #111;
+color: gray;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+.footer ul li{
+list-style: none;
+padding: 7px;
+}
+.footer ul li a:hover{
+color: crimson;
+}
+.footer ul li a{
+font-weight: 700;
+text-decoration: none;
+color: grey;
+}
+.footer .left, .right , .middle{
+width: 30%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+}
+.footer 
+h3{
+position: absolute;
+top: 5%;
+}
+.container-home button{
+cursor: pointer;
+border-radius: 2rem;
+color: white;
+
+}
+.container-home button:hover{
+background-color: crimson;
+
+}

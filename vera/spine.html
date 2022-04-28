@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader....</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: none;
+    }
+    .cirlce{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        /* background-color: aliceblue; */
+        animation-name: rotate;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: 100000;
+        animation-fill-mode: smooth;
+        animation-direction: normal;
+    }
+    @keyframes rotate{
+        0%{
+            transform: rotate(90deg);
+        }
+        50%{
+            transform: rotate(360deg);
+            /* opacity: 0; */
+            
+        }
+        100%{
+            transform: rotate(720deg);
+        }
+    }
+    .dot1{
+        background-color: aqua;;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        top: -50%;
+        left: 25%;
+    }
+    .dot2{
+        background-color: aqua;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        border-radius: 50%;
+        top: -25%;
+        right: -30%;
+    }
+    .dot3{
+        background-color: aqua;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        border-radius: 50%;
+        top: 40%;
+        right: -45%;
+    }
+    .dot4{
+        background-color: aqua;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        border-radius: 50%;
+        bottom: -30%;
+        right: -25%;
+    }
+    .dot5{
+        background-color: aqua;;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        border-radius: 50%;
+        bottom: -50%;
+        left: 40%;
+    }
+    .dot6{
+        background-color: aqua;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-radius: 50%;
+        bottom: -23%;
+        left: -20%;
+    }
+    .dot7{
+        background-color: aqua;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        border-radius: 50%;
+        top: 45%;
+        left: -45%;
+    }
+    .dot8{
+        background-color: aqua;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        border-radius: 50%;
+        top: -5%;
+        left: -26%;
+    }
+
+</style>
+<body>
+    
+    
+    <div class="container">
+        <div class="cirlce">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+            <div class="dot4"></div>
+            <div class="dot5"></div>
+            <div class="dot6"></div>
+            <div class="dot7"></div>
+            <div class="dot8"></div>
+        
+        </div>
+    </div>
+</body>
+</html>

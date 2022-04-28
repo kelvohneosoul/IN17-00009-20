@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #111;
+        width: 100%;
+        height: 100vh;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 80%;
+        color: aliceblue;
+        position: relative;
+    }
+    input{
+        outline: none;
+        border: 1px blanchedalmond solid;
+        padding: 20px;
+        width: 100%;
+        background: transparent;
+        border-radius: 8px;
+        color: aliceblue;
+    }
+    label{
+        position: absolute;
+        left: 5px;
+        height: 100%;
+        
+    }
+    input:focus~lable{
+    top:0;
+    
+    font-size: 14px;
+}
+</style>
+<body>
+    <form action="#" method="get">
+        <input type="text" class="input">
+        <label for="name">name:</label>
+    </form>
+</body>
+</html>
